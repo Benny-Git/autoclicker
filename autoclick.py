@@ -4,7 +4,6 @@ import time
 import datetime
 import sys
 import tkinter as tk
-#from tkinter import *
 from functools import partial
 
 numclicks = 0
@@ -28,7 +27,7 @@ class MainWindow(tk.Frame):
         e.insert(0,numclicks)
         button = tk.Button(self, text="GO", command=self.goclick, height=10, width=50)
         button.pack()
-        
+
     def goclick(self):
 
         global numclicks
@@ -92,7 +91,7 @@ def main(args):
     MainWindow(root).pack()
 
     root.mainloop()
-       
+
 
 
 
